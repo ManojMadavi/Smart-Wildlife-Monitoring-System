@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Monitoring Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon" aria-label="Wildlife Monitor Icon">
+                            <ion-icon name="paw-outline"></ion-icon>
+                        </span>
+                        <span class="title">Wildlife Monitor</span>
+                    </a>
+                </li>
+                <!-- Use aria-labels for screen readers -->
+                <li>
+                    <a href="#" aria-label="Dashboard">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Species Tracking">
+                        <span class="icon">
+                            <ion-icon name="earth-outline"></ion-icon>
+                        </span>
+                        <span class="title">Species Tracking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Alerts & Notifications">
+                        <span class="icon">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                        </span>
+                        <span class="title">Alerts & Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Performance Reports">
+                        <span class="icon">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </span>
+                        <span class="title">Performance Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Habitat Maps">
+                        <span class="icon">
+                            <ion-icon name="map-outline"></ion-icon>
+                        </span>
+                        <span class="title">Habitat Maps</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Settings">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Sign Out">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" aria-label="Menu Toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label for="search-input">
+                        <input type="text" id="search-input" placeholder="Search here" aria-label="Search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="User Image" aria-label="User Profile">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">200</div>
+                        <div class="cardName">Species Detected</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">5</div>
+                        <div class="cardName">Active Alerts</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">23°C</div>
+                        <div class="cardName">Current Temperature</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="thermometer-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">65%</div>
+                        <div class="cardName">Humidity</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="water-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Recent Detections ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Detections</h2>
+                        <a href="#" class="btn" aria-label="View All Recent Detections">View All</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Species</td>
+                                <td>Location</td>
+                                <td>Time</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Lion</td>
+                                <td>Savannah Zone</td>
+                                <td>12:30 PM</td>
+                                <td><span class="status detected">Detected</span></td>
+                            </tr>
+                            <tr>
+                                <td>Elephant</td>
+                                <td>River Area</td>
+                                <td>9:45 AM</td>
+                                <td><span class="status detected">Detected</span></td>
+                            </tr>
+                            <tr>
+                                <td>Eagle</td>
+                                <td>Mountain Region</td>
+                                <td>3:15 PM</td>
+                                <td><span class="status detected">Detected</span></td>
+                            </tr>
+                            <tr>
+                                <td>Leopard</td>
+                                <td>Forest Area</td>
+                                <td>6:50 AM</td>
+                                <td><span class="status detected">Detected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= Environmental Stats ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Environmental Stats</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt="Water Level Image"></div>
+                            </td>
+                            <td>
+                                <h4>Water Levels <br> <span>Normal</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt="Air Quality Image"></div>
+                            </td>
+                            <td>
+                                <h4>Air Quality <br> <span>Good</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt="Temperature Image"></div>
+                            </td>
+                            <td>
+                                <h4>Temperature <br> <span>Stable</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt="Humidity Image"></div>
+                            </td>
+                            <td>
+                                <h4>Humidity <br> <span>Moderate</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
